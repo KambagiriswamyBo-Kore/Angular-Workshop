@@ -1,0 +1,52 @@
+.container {
+    // background-image: linear-gradient(lightgreen, lightblue);
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+    p {
+        line-height: 1.5rem;
+        padding: 100px;
+    }
+    .goToTop {
+        width: 50px;
+        height: 50px;
+        background: #f74600;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .5);
+        -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .5);
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .5);
+        cursor: pointer;
+        display: inline-block;
+        position: fixed;
+        bottom: 100px;
+        right: 10px;
+        z-index: 9999;
+        transform: scale(0);
+        float: right;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+
+        .goToTopIcon {
+            margin: auto;
+            left: 1px;
+            right: 0;
+            top: 0px;
+            border: 0;
+            bottom: 0;
+            position: absolute;
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    .goToTop.showGototop {
+        transform: scale(1);
+    }
+}
