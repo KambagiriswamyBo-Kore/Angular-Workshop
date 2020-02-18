@@ -6,10 +6,12 @@ import { DashboardComponent } from './dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { WorkerDemoComponent } from './worker-demo/worker-demo.component';
+import { InsideZoomComponent } from './inside-zoom/inside-zoom.component';
+import { FiltersNewComponent } from './filters-new/filters-new.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, ScrollTopComponent, WorkerDemoComponent],
+  declarations: [DashboardComponent, ScrollTopComponent, WorkerDemoComponent, InsideZoomComponent, FiltersNewComponent],
   imports: [
     CommonModule,
     SharedModule,

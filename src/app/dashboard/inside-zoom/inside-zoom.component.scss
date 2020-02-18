@@ -1,0 +1,46 @@
+.container {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    padding: 50px 0;
+    margin: 0 auto;
+    background: #fdfdfd;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 10px;
+        padding: 20px;
+
+        .item {
+            position: relative;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+
+            .item-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: transparent;
+                background-image: url('../../../assets/beach.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: all .3s ease-in-out;
+                // transform: scale(1.5);
+
+                &:hover {
+                    // box-shadow: 2px 2px 3px gray;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}

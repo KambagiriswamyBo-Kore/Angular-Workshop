@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { WorkerDemoComponent } from './worker-demo/worker-demo.component';
+import { InsideZoomComponent } from './inside-zoom/inside-zoom.component';
 
 
 const routes: Routes = [
@@ -16,7 +17,12 @@ const routes: Routes = [
   {
     path: 'worker',
     component: WorkerDemoComponent
-  }
+  },
+  {
+    path: 'inside-zoom',
+    component: InsideZoomComponent
+  },
+  
 ];
 
 @NgModule({
