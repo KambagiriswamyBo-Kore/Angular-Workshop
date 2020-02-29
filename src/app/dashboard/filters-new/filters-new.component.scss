@@ -1,0 +1,16 @@
+.container {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: lightgray;
+    position: relative;
+
+    .filter-container {
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+}

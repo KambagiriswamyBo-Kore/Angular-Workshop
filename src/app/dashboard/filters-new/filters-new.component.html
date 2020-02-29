@@ -1,1 +1,53 @@
-<p>filters-new works!</p>
+<div class="container">
+    <div class="filter-container">
+        <form #form="ngForm">
+            <div class="header">
+                <div>Filter</div>
+                <div>Reset</div>
+                <div>Apply</div>
+            </div>
+
+            <div>
+                <label>Type</label>
+                <mat-tab-group (selectedTabChange)="onSelectedTabChange($event)" animationDuration="0ms">
+                    <mat-tab *ngFor="let tab of tabs" [label]="tab">
+                        <ng-template mat-tab-label>
+                            <div>{{tab.label}}</div>
+                        </ng-template>
+                        <ng-template [ngTemplateOutlet]="searchField"></ng-template>
+                    </mat-tab>
+                </mat-tab-group>
+
+
+                <ng-template #searchField>
+                    <mat-form-field>
+                        <input matInput placeholder="Search people" aria-label="Users" [matAutocomplete]="auto"
+                            [formControl]="userCtrl">
+                        <mat-autocomplete #auto="matAutocomplete">
+                            <mat-option *ngFor="let item of filteredList | async" [value]="item.name">
+                                <span>{{item.name}}</span>
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+
+                    <div *ngFor="let user of usersList">
+                        <span>{{user.name}}</span>
+                    </div>
+                </ng-template>
+
+            </div>
+
+            <div>
+                <label>Date</label>
+
+            </div>
+
+            <div>
+                <label>Attachments</label>
+                <mat-checkbox *ngFor="let contentType of contentTypes" [checked]="contentType.checked"
+                    (change)="contentType.checked=$event.checked; onFormChange()">{{contentType.label}}</mat-checkbox>
+            </div>
+
+        </form>
+    </div>
+</div>
