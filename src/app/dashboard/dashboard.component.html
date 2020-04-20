@@ -1,3 +1,13 @@
 <div class="container">
-  
+    <button type="button" class="btn btn-primary" (click)="toggleModal()">
+        Launch demo modal sideout large
+    </button>
+    
+    
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout modal-md" role="document">
+           <app-sliding-panel *ngIf="showModal"></app-sliding-panel>
+        </div>
+    </div>
 </div>

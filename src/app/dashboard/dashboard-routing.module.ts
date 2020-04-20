@@ -6,6 +6,7 @@ import { WorkerDemoComponent } from './worker-demo/worker-demo.component';
 import { InsideZoomComponent } from './inside-zoom/inside-zoom.component';
 import { FiltersNewComponent } from './filters-new/filters-new.component';
 import { AutoSelectAllComponent } from './auto-select-all/auto-select-all.component';
+import { SlidingPanelComponent } from './sliding-panel/sliding-panel.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'auto-complete',
     component: AutoSelectAllComponent
+  },
+  {
+    path: 'sliding-panel',
+    component: SlidingPanelComponent
   },
   
 ];

@@ -9,10 +9,11 @@ import { WorkerDemoComponent } from './worker-demo/worker-demo.component';
 import { InsideZoomComponent } from './inside-zoom/inside-zoom.component';
 import { FiltersNewComponent } from './filters-new/filters-new.component';
 import { AutoSelectAllComponent } from './auto-select-all/auto-select-all.component';
+import { SlidingPanelComponent } from './sliding-panel/sliding-panel.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, ScrollTopComponent, WorkerDemoComponent, InsideZoomComponent, FiltersNewComponent, AutoSelectAllComponent],
+  declarations: [DashboardComponent, ScrollTopComponent, WorkerDemoComponent, InsideZoomComponent, FiltersNewComponent, AutoSelectAllComponent, SlidingPanelComponent],
   imports: [
     CommonModule,
     SharedModule,
