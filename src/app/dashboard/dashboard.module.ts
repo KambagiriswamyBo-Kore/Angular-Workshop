@@ -10,10 +10,11 @@ import { InsideZoomComponent } from './inside-zoom/inside-zoom.component';
 import { FiltersNewComponent } from './filters-new/filters-new.component';
 import { AutoSelectAllComponent } from './auto-select-all/auto-select-all.component';
 import { SlidingPanelComponent } from './sliding-panel/sliding-panel.component';
+import { KoraEditorComponent } from './kora-editor/kora-editor.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, ScrollTopComponent, WorkerDemoComponent, InsideZoomComponent, FiltersNewComponent, AutoSelectAllComponent, SlidingPanelComponent],
+  declarations: [DashboardComponent, ScrollTopComponent, WorkerDemoComponent, InsideZoomComponent, FiltersNewComponent, AutoSelectAllComponent, SlidingPanelComponent, KoraEditorComponent],
   imports: [
     CommonModule,
     SharedModule,

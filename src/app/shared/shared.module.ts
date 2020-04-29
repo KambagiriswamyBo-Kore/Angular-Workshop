@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MeterialModule } from './meterial/meterial.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [],
@@ -11,12 +10,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     MeterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CKEditorModule
   ],
   exports: [
     MeterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CKEditorModule
   ]
 })
 export class SharedModule { }
