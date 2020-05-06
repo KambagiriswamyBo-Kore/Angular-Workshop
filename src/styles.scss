@@ -1,7 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; overflow: auto;  scroll-behavior: smooth;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  }
+html,
+body {
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 * {
     box-sizing: border-box;
 }
+
+.ck-editor__editable_inline {
+    min-height: 500px;
+}
+
+/* angular-editor styles Start */
+.angular-editor-textarea {
+    min-height: 500px !important;
+}
+
+/* angular-editor styles End */

@@ -1,1 +1,7 @@
-<ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+<ckeditor [config]="editorConfig" [(ngModel)]="model.editorData" [editor]="Editor"
+    (change)="onChange($event)" [disabled]="isDisabled">
+</ckeditor>
+
+<button (click)="toggleDisabled()">
+    {{ isDisabled ? 'Enable editor' : 'Disable editor' }}
+</button>
